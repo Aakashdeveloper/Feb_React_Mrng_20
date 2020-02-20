@@ -1,0 +1,116 @@
+React - 3
+React-Redux - 2
+React-Hooks - 1
+React-Graphql-apollo - 1
+React-JWT-1
+Basic(react-native)-1
+MockApi
+--------------------------
+Testing
+----------
+Production Ready
+> MERN
+> Node Apache IIS
+> Nginx
+> Docker
+
+------
+Github
+-------
+25-30
+----------------------------
+Not Gona build API
+Backend JWT
+------------------------
+
+//NPM///
+//React Setup//
+
+JSON => Format of data(key:value)
+[
+    {
+        "name":"John",
+        "class":1
+    },
+    {
+        "name":"John",
+        "class":1
+    }
+]
+
+https://nodejs.org/en/
+
+/**********Package.json*************/
+Script
+Deescription
+Verison
+Dependency mangement
+
+/*****************
+Set to create Package.json
+********************/
+**NodeJs must be install
+> Navigate to the folder using cmd/termianl
+> npm init
+> answer all question
+> type 'yes'
+
+
+
+Node Package Manager
+
+/******
+Local Dependency/Package/Node_Module
+> Installed in one folder
+
+Global Dependency/Package/Node_Module
+> System Dependency
+> Generate
+> Start
+> Run
+*******/
+
+
+/*****
+Step to install local Dependency
+****/
+> Navigate to the folder using cmd/termianl
+> npm install <Packagename>/ npm i <Packagename>/ 
+
+/*****
+Step to install Global Dependency
+****/
+
+#Win
+> Open cmd as admin
+> npm i -g @aakashdeveloper/create-node-app
+
+#Mac 
+> Open terminal
+> sudo npm i -g @aakashdeveloper/create-node-app
+
+
+/*****
+Step to create react application
+****/
+
+#Win
+> Open cmd as admin
+> npm i -g create-react-app
+> Navigate to the folder using cmd
+> create-react-app <appname>
+> cd appname
+> npm start
+
+#Mac/linux
+> Open terminal
+> sudo npm i -g create-react-app
+> Navigate to the folder using termianl
+> create-react-app <appname>
+> cd appname
+> npm start
+
+
+---------------
+//Walk Through folders
+//Create first component
