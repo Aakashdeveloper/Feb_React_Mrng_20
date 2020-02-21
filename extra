@@ -111,6 +111,22 @@ Step to create react application
 > npm start
 
 
+
+//Component in React
+
+Functional               ClassBase
+Light in weight          Heavy in weight
+Dumb/display component   Logical Component
+Cannot Maintain State    Can Maintain State
+
+
+
+HooksComponent
+
 ---------------
-//Walk Through folders
-//Create first component
+//Second Component
+//ClassBase
+
+
+
+
