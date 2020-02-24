@@ -1,0 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Home from './component/Home';
+
+//functional component
+const App = () => {
+    return(
+        <React.Fragment>
+            <Home/>
+            <h2>This is from visual path</h2>
+        </React.Fragment>
+    )
+}
+
+ReactDOM.render(<App/>, document.getElementById('root'))

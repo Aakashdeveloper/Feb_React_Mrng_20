@@ -1,0 +1,30 @@
+import React, {Component} from 'react';
+
+class Header extends Component {
+    render(){
+        const mystyle={
+            headers:{
+                backgroundColor:'teal'
+            },
+            logo:{
+                fontSize:'40px',
+                color:'#fff',
+                textAlign:'center'
+            }
+        }
+        return(
+            <React.Fragment>
+                <header style={mystyle.headers}>
+                    <div style={mystyle.logo}>React App</div>
+                    <br/>
+                    <center>
+                        <input placeholder="User Text here"/>
+                    </center>
+                </header>
+            </React.Fragment>
+        )
+    }
+}
+
+
+export default Header;

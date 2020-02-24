@@ -1,14 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import Home from './component/Home';
 
-//functional component
-const App = () => {
-    return(
-        <div>
-            <h1>Home Page component</h1>
-            <h2>This is from visual path</h2>
-        </div>
-    )
-}
-
-ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<Home/>, document.getElementById('root'))

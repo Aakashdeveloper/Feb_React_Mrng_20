@@ -123,9 +123,16 @@ Cannot Maintain State    Can Maintain State
 
 HooksComponent
 
+
+Tagname
+className
+Id
+
 ---------------
 //Second Component
 //ClassBase
+
+
 
 
 
