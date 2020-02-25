@@ -1,12 +1,24 @@
 import React,{Component} from 'react';
 import Header from './Header';
+import NewsList from './NewsDisplay';
+import JSON from '../db.json';
 
 class Home extends Component {
+    constructor(){
+        super()
+
+        this.state={
+            title:'Home Page App',
+            news:JSON
+        }
+    }
+
     render(){
+        //console.log(JSON)
         return(
             <React.Fragment>
                 <Header/>
-                <h1>Home Page</h1>
+                <NewsList datalist={this.state.news}/>
             </React.Fragment>
         )
     }

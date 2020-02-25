@@ -28,3 +28,10 @@ const=> we cannot redeclare nor reassign
 var a =10
 var a  => Declaring
 a=10 => assigment
+
+var a = ["a","b","c"]
+for(i=0;i<a.length;i++){
+    console.log(a[i])
+}
+
+a.map((data) => { console.log(data)})

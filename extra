@@ -129,8 +129,16 @@ className
 Id
 
 ---------------
-//Second Component
-//ClassBase
+//State, props
+//import data
+//passing data from one component to other
+
+
+state=> Local variable
+
+
+ComponentA    ===Props===>  ComponentB
+state:'a'                    State:''
 
 
 
