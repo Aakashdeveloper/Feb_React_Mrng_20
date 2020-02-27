@@ -7,18 +7,28 @@ class Home extends Component {
     constructor(){
         super()
 
+        console.log("inside constructor")
         this.state={
             title:'Home Page App',
-            news:JSON
+            news:JSON,
+            filtered:JSON
         }
     }
 
+    filterNews(keyword){
+        const output = this.state.news.filter((data) => {
+            return data.title.toLowerCase().indexOf(keyword.toLowerCase())>-1
+        })
+        this.setState({filtered:output})
+    }
+
     render(){
+        console.log("inside render")
         //console.log(JSON)
         return(
             <React.Fragment>
-                <Header/>
-                <NewsList datalist={this.state.news}/>
+                <Header userText={(useinput) => {this.filterNews(useinput)}}/>
+                <NewsList datalist={this.state.filtered}/>
             </React.Fragment>
         )
     }
@@ -30,9 +40,7 @@ export default Home;
 
 
 /*
-const Home = () => {
-    return(
-        <h1>Home Page</h1>
-    )
-}
+add = (a) => {return a+a}
+
+add(1)
 */

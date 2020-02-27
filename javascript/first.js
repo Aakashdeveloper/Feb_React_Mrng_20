@@ -35,3 +35,8 @@ for(i=0;i<a.length;i++){
 }
 
 a.map((data) => { console.log(data)})
+
+filter 
+
+var a = [18, 45, 23,17 ,89]
+a.filter((data) => { return data>18})
