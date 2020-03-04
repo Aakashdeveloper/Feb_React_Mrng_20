@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import Header from './Header';
+import Albums from './Albums';
 
 const url="http://localhost:8900/artists";
 
@@ -27,6 +28,7 @@ class ArtistDetails extends Component {
                         <div className="bio_text">
                             {mydata.bio}
                         </div>
+                        <Albums albumd={mydata.albums}></Albums>
                     </div>
                 </div>
             </div>

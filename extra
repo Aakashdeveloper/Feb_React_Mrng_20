@@ -173,3 +173,7 @@ install global Package
 var a = 10
 var b = "my age is "+a 
 var c = `my age is ${a}`
+
+
+
+ 
