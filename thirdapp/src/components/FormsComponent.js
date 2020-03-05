@@ -28,6 +28,7 @@ class FormsComponent extends Component {
     handleChangeBio(event){
         this.setState({bio:event.target.value})
     }
+    
 
     handleSubmit(){
         var random  = Math.floor(Math.random()*10000)
