@@ -70,7 +70,8 @@ class FormsComponent extends Component {
             },
             body:JSON.stringify(data)
         })
-        .then((res)=> console.log('Data posted'))
+        .then(this.props.history.push('/'))
+        
     }
 
     render(){
@@ -84,7 +85,7 @@ class FormsComponent extends Component {
                         </div>
                         <div className="panel-body">
                             <div className="form-group">
-                                <label>Name</label>
+                                <label>Names</label>
                                 <input type="text" className="form-control"
                                 id="name" value={this.state.name}
                                 onChange={this.handleChangeName}
