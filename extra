@@ -175,6 +175,4 @@ var a = 10
 var b = "my age is "+a 
 var c = `my age is ${a}`
 
-
-
- 
+npm i redux react-redux redux-promise react-slick react-test-render react-addons-test-utils
