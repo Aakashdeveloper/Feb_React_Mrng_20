@@ -10,9 +10,11 @@ import Gallery from '../component/Home/GalleryNew';
 
 class Home extends Component{
     componentDidMount(){
-        this.props.latestNews()
-        this.props.articleNews()
-        this.props.galleryNews()
+        if(Object.entries(this.props.myarticle).length === 0){
+            this.props.latestNews()
+            this.props.articleNews()
+            this.props.galleryNews()
+        }
     }
 
     render(){
