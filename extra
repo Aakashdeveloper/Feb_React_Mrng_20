@@ -1,20 +1,19 @@
 React - 3
 React-Hooks - 1
 MockApi
---------------------------
 React-Redux - 2
-React-Graphql-apollo - 1
-React-JWT-1
-Basic(react-native)-1
---------------------------
-Testing
-----------
 Production Ready
 > MERN
 > Node Apache IIS
 > Nginx
 > Docker
 
+--------------------------
+React-Graphql-apollo - 1
+React-JWT-1
+Basic(react-native)-1
+--------------------------
+Testing
 ------
 Github
 -------
@@ -176,3 +175,44 @@ var b = "my age is "+a
 var c = `my age is ${a}`
 
 npm i redux react-redux redux-promise react-slick react-test-render react-addons-test-utils
+
+
+docker build . -t marchreact
+docker image ls
+docker run -p 8086:3000 imageid
+
+in nginx.conf
+    server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	    root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
+
+
+/*******************
+npm i -g create-react-native-app
+
+create-react-native-app mobileapp
+
+
+>>>>
+/******GetUser*****/
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role":"admin"}
+
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
