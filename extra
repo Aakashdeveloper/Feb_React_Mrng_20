@@ -7,9 +7,9 @@ Production Ready
 > Node Apache IIS
 > Nginx
 > Docker
+> React-Graphql-apollo - 1
 
 --------------------------
-React-Graphql-apollo - 1
 React-JWT-1
 Basic(react-native)-1
 --------------------------
@@ -216,3 +216,19 @@ create-react-native-app mobileapp
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
 
+
+
+npm i react-test-render react-addons-test-utils enzyme-adapter-react
+
+
+function looping(userinput){
+    for(i=0;i<userinput;i++){
+        console.log
+    }
+}
+
+function * looping(userinput){
+    for(i=0;i<userinput;i++){
+        yield(i)
+    }
+}
